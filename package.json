@@ -1,0 +1,23 @@
+{
+  "name": "ampersand",
+  "version": "0.0.0",
+  "description": "Ampersand Tutorial videos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mknudsen01/ampersand-tutorial.git"
+  },
+  "author": "Matthew Knudsen",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mknudsen01/ampersand-tutorial/issues"
+  },
+  "homepage": "https://github.com/mknudsen01/ampersand-tutorial",
+  "dependencies": {
+    "hapi": "~6.11.1",
+    "moonboots_hapi": "~2.4.0"
+  }
+}
