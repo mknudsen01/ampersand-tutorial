@@ -1,6 +1,15 @@
+var MainView = require('./main-view');
+var domready = require('domready');
+
+
 window.app = {
   init: function() {
-    console.log("Hello world");
+    var self = this;
+    domready(function() {
+      self.view = new MainView({
+        el: document.body
+      });
+    });
   }
 };
 
