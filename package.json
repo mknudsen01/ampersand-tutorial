@@ -20,6 +20,7 @@
     "hapi": "~6.11.1",
     "moonboots_hapi": "~2.4.0",
     "ampersand-view": "~7.1.4",
-    "domready": "~1.0.7"
+    "domready": "~1.0.7",
+    "ampersand-router": "~1.0.5"
   }
 }
