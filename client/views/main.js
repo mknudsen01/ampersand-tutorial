@@ -12,7 +12,12 @@ module.exports = View.extend({
   initialize: function(){
     this.listenTo(app.router, 'page', this.handleNewPage);
   },
-
+  bindings: {
+    'model.fullName': {
+      type: 'text',
+      hook: 'user-name'
+    }
+  },
   render: function(){
     this.renderWithTemplate();
     //instantiate a view switcher, passing it <main> element
