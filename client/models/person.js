@@ -5,6 +5,13 @@ module.exports = Model.extend({
 		id: 'number',
 		givenName: 'string', 
 		familyName: 'string', 
-
+	}, 
+	derived: {
+		fullName: {
+			deps: ['givenName', 'familyName'], 
+			fn: function() {
+				return this.givenName + ' ' + this.familyName;
+			}
+		}
 	}
 })
