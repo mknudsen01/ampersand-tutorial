@@ -22,12 +22,17 @@
 
     // includes/user.jade compiled template
     templatizer["includes"]["user"] = function tmpl_includes_user() {
-        return '<li> <span data-hook="user-name"></span><button class="btn btn-danger">Delete</button><button class="btn btn-warning">Edit</button></li>';
+        return '<li> <span data-hook="user-name"></span><button data-hook="action-delete-user" class="btn btn-danger">Delete</button><a data-hook="action-view-user" class="btn btn-warning">View</a></li>';
     };
 
     // pages/home.jade compiled template
     templatizer["pages"]["home"] = function tmpl_pages_home() {
         return '<section class="page"><h2>Home</h2></section>';
+    };
+
+    // pages/userView.jade compiled template
+    templatizer["pages"]["userView"] = function tmpl_pages_userView() {
+        return '<section class="page user-view"><img data-hook="user-avatar" width="50" height="50"/><p data-hook="user-name"></p><p data-hook="user-awesomeness"></p></section>';
     };
 
     // pages/users.jade compiled template

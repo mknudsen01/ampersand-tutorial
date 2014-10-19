@@ -7,6 +7,18 @@ module.exports = View.extend({
 		'model.fullName': {
 			type: 'text', 
 			hook: 'user-name'
+		}, 
+		'model.viewUrl': {
+			type: 'attribute',
+			name: 'href',
+			hook: 'action-view-user'
 		}
+	}, 
+	events: {
+		'click [data-hook=action-delete-user]': 'handleDeleteClick'
+	}, 
+
+	handleDeleteClick: function() {
+		this.model.destroy();
 	}
 })
