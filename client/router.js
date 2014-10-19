@@ -14,6 +14,7 @@ module.exports = Router.extend({
 
   users: function(){
     this.trigger( 'page', new UserListPage({
+      //comment out if want to do the render subviews thing in user-list.js
       collection: app.persons
     }) );
   }
