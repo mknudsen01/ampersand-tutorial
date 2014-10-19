@@ -24,6 +24,7 @@
     "ampersand-router": "~1.0.5",
     "ampersand-view-switcher": "~1.0.5",
     "getconfig": "~0.3.0",
-    "templatizer": "~1.0.1"
+    "templatizer": "~1.0.1",
+    "stylizer": "~2.0.0"
   }
 }
