@@ -18,6 +18,7 @@ module.exports = new API({
     // the root RESTful resource URL
     rootUrl: '/api/people',
     name: 'fake-people-api',
+    delay: 1000,
     // hapi plugin version, defaults to '0.0.0',
     version: '0.0.1'
 });

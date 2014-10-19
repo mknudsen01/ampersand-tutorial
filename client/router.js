@@ -1,18 +1,20 @@
 var Router = require('ampersand-router');
 var HomePage = require('./pages/home');
-var ListPage = require('./pages/list');
+var UserListPage = require('./pages/user-list');
 
 module.exports = Router.extend({
   routes: {
     '': 'home',
-    'list': 'list'
+    'users': 'users'
   },
 
   home: function(){
     this.trigger( 'page', new HomePage() );
   },
 
-  list: function(){
-    this.trigger( 'page', new ListPage() );
+  users: function(){
+    this.trigger( 'page', new UserListPage({
+      collection: app.persons
+    }) );
   }
 });
