@@ -21,7 +21,12 @@
 
     // pages/home.jade compiled template
     templatizer["pages"]["home"] = function tmpl_pages_home() {
-        return '<section class="page"><h2>Other name</h2></section>';
+        return '<section class="page"><h2>Home</h2></section>';
+    };
+
+    // pages/list.jade compiled template
+    templatizer["pages"]["list"] = function tmpl_pages_list() {
+        return '<section class="page"><h2>List</h2></section>';
     };
 
     return templatizer;
