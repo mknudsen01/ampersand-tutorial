@@ -2,11 +2,15 @@ var MainView = require('./views/main');
 var domready = require('domready');
 var Router = require('./router');
 var MeModel = require('./models/me');
+var Persons = require('./models/persons');
 
 window.app = {
   init: function() {
     var self = this;
     window.me = new MeModel();
+
+    this.persons = new Persons();
+
     domready(function() {
       self.router = new Router();
       self.view = new MainView({

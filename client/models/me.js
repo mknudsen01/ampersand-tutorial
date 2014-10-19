@@ -6,7 +6,7 @@ module.exports = Model.extend({
     this.fetch();
   },
   props: {
-    id: 'string',
+    id: 'number',
     givenName: 'string',
     familyName: 'string',
     email: 'string'
