@@ -21,6 +21,7 @@
     "moonboots_hapi": "~2.4.0",
     "ampersand-view": "~7.1.4",
     "domready": "~1.0.7",
-    "ampersand-router": "~1.0.5"
+    "ampersand-router": "~1.0.5",
+    "ampersand-view-switcher": "~1.0.5"
   }
 }
