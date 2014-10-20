@@ -22,12 +22,27 @@
 
     // includes/user.jade compiled template
     templatizer["includes"]["user"] = function tmpl_includes_user() {
-        return '<li> <span data-hook="user-name"></span><button class="btn btn-danger">Delete</button><button class="btn btn-warning">Edit</button></li>';
+        return '<li> <span data-hook="user-name"></span><button data-hook="action-delete-user" class="btn btn-danger">Delete</button><a data-hook="action-view-user" class="btn btn-warning">View</a><a data-hook="action-edit-user" class="btn btn-success">Edit</a></li>';
     };
 
     // pages/home.jade compiled template
     templatizer["pages"]["home"] = function tmpl_pages_home() {
         return '<section class="page"><h2>Home</h2></section>';
+    };
+
+    // pages/user-create.jade compiled template
+    templatizer["pages"]["user-create"] = function tmpl_pages_user_create() {
+        return '<section class="page create-user"><h1>Create a New User</h1><form data-hook="user-form"><fieldset data-hook="field-container"></fieldset><button type="submit" class="btn btn-primary">Create User</button></form></section>';
+    };
+
+    // pages/user-edit.jade compiled template
+    templatizer["pages"]["user-edit"] = function tmpl_pages_user_edit() {
+        return '<section class="page edit-user"><h1>Edit User</h1><form data-hook="user-form"><fieldset data-hook="field-container"></fieldset><button type="submit" class="btn btn-primary">Save</button></form></section>';
+    };
+
+    // pages/userView.jade compiled template
+    templatizer["pages"]["userView"] = function tmpl_pages_userView() {
+        return '<section class="page user-view"><img data-hook="user-avatar" width="50" height="50"/><p data-hook="user-name"></p><p data-hook="user-awesomeness"></p></section>';
     };
 
     // pages/users.jade compiled template
