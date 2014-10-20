@@ -12,7 +12,12 @@ module.exports = View.extend({
 			type: 'attribute',
 			name: 'href',
 			hook: 'action-view-user'
-		}
+		},
+		'model.editUrl': {
+			type: 'attribute',
+			name: 'href',
+			hook: 'action-edit-user'
+		},
 	}, 
 	events: {
 		'click [data-hook=action-delete-user]': 'handleDeleteClick'
